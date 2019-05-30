@@ -1,0 +1,74 @@
+>> LaTeX-Workshop on VS Code error
+https://tex.stackexchange.com/questions/461954/error-latexmk-the-script-engine-could-not-be-found-in-vs-code-using-miktex-2/462680
+
+LuaLateX -> https://tex.stackexchange.com/questions/455648/lualatex-not-recognised-as-a-vs-code-tool
+
+XELATEX -> https://github.com/James-Yu/LaTeX-Workshop/issues/642
+
+Code
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.latex.clean.onFailBuild.enabled": true,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex->biber->lualatex",
+            "tools": [
+                "lualatex",
+                "biber",
+                "lualatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk_xe",
+            "tools": [
+                "latexmk_xe"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatex",
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                // "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk_xe",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                // "-pdf",
+                "%DOC%"
+            ]
+        },
+    ]
+}

@@ -232,6 +232,7 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
 
 \newcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\headerbiostyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
 
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 
@@ -350,6 +351,7 @@
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
 \renewcommand*{\quote}[1]{\def\@quote{#1}}
+\newcommand*{\bio}[1]{\def\@bio{#1}}
 
 % Defines recipient's information (cover letter only)
 % Usage: \recipient{<recipient name>}{<recipient address>}
@@ -394,11 +396,12 @@
 \newcommand{\acvHeaderNameDelim}{\space}
 \newcommand{\acvHeaderAfterNameSkip}{1mm}
 \newcommand{\acvHeaderAfterPositionSkip}{1mm}
-\newcommand{\acvHeaderAfterAddressSkip}{-0.2mm}
+\newcommand{\acvHeaderAfterAddressSkip}{1mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{8mm}
+\newcommand{\acvHeaderAfterSocialSkip}{5mm}
 \newcommand{\acvHeaderAfterQuoteSkip}{-2mm}
+\newcommand{\acvHeaderAfterBioSkip}{-2mm}
 
 % Others
 \newcommand{\acvSectionTopSkip}{3mm}
@@ -536,6 +539,9 @@
           \@extrainfo%
         }%
     } \\[\acvHeaderAfterSocialSkip]%
+    \ifthenelse{\isundefined{\@bio}}%
+      {}%
+      {\headerbiostyle{\@bio\\}\vspace{\acvHeaderAfterBioSkip}}%
     \ifthenelse{\isundefined{\@quote}}%
       {}%
       {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%

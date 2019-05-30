@@ -1,0 +1,35 @@
+* Save it as Santillan_Guido_CV
+* CVs are signed at the bottom.
+
+---Details
+Date of Birth: 28.12.1992
+Nationality: Ecuadorian
+Marital Status: Single
+
+---Contact Information
+Adress: John F. Kennedy Street
+Phone: (+593) 98 747 3691 GMT (-5)
+Email Address: info@guidosantillan.com
+
+---Summary
+Advanced web developer with 10 years of experience in structuring, developing and implementing interactive websites. Innovative use of technology and SEO to drive traffic and engage users. Able to complete projects efficiently and satisfy customers with attractive, user-friendly websites.
+
+---Areas of Expertise
+Advanced programming and design skills
+Web content management
+Landing page development
+SEO
+Project management
+Strong collaborative skills
+Website optimization
+Excellent problem solving skills
+
+---Syder Ideas
+Developed the backend of this application using Node and Express
+Designed authentication and authorization scheme with Auth-0 JWTs and Passport
+
+---Independent Web Developer
+Learnt new techniques to design and create over 5 websites
+Performed website design and development for clients in diverse fields such as consulting, non-profit organizations, and legal.
+
+

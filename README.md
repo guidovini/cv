@@ -10,6 +10,6 @@ To compile, type:
 
 In my case it would be:
 
-`xelatex resumenEN.tex`
+`xelatex resumen.tex`
 
 This will produce a pdf file with the same name.

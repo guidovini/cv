@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% \geometry{left=1.5cm, top=.8cm, right=1.5cm, bottom=1.8cm, footskip=.5cm}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-emerald}
+%\definecolor{awesome}{HTML}{CA63A8}
+
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{graphicx}
+
+%%% To ensure that the PDF viewer is capable of opening a link in a browser
+\usepackage{hyperref} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,right]{photo.jpg}
+\name{Guido}{Santillán}
+\address{N71-38 John F. Kennedy, Pablo Picasso, Quito, 170301, Ecuador}
+\mobile{(+593) 987473691 GMT-5} 
+
+%%% Social
+\email{info@guidosantillan.com}
+\homepage{www.guidosantillan.com}
+\github{guidosantillan01}
+\linkedin{guido92}
+
+%%% Optionals
+\position{Full-Stack Web Developer{\enskip\cdotp\enskip}Mechatronics Engineer{\enskip\cdotp\enskip}Tech enthusiast}
+% \quote{"Be the change you want to see in the world."}
+\bio{Date of Birth: 28.12.1992 {\enskip\cdotp\enskip}Nationality: Ecuadorian{\enskip\cdotp\enskip}Marital Status: Single}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {}
+  {Guido Santillán ~~~·~~~ Curriculum vitae}
+  {\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%LANGUAGES
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader[C]
+%
+%\begin{picture}(0,0)
+%    \put(430,-10){\includegraphics[width=37mm,height=45mm]{photo.jpg}}
+%\end{picture}
+%
+%%% Import contents
+\import{\sectiondir}{summary.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{honors.tex}
+\newpage
+
+\end{document}

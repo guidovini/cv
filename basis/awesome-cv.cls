@@ -265,7 +265,8 @@
 \newcommand*{\skillsetstyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
-\newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+% \newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\paragraphstyle}[1]{{\fontsize{11pt}{1.2em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
@@ -686,12 +687,20 @@
 % Define a paragraph for cvletter
 % Usage: \cvparagraph{<paragraph-title>}
 \newcommand{\cvparagraph}[1]{
-  \par\addvspace{2.5ex}
-  \phantomsection{}
+  \par\addvspace{-1ex}
+  % \phantomsection{}
   \paragraphstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{0.4ex}
+  % \color{gray}\vhrulefill{0.9pt}
+  % \par\nobreak\addvspace{0.4ex}
 }
+% \newenvironment{cvparagraph}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \vspace{-3mm}
+%   \paragraphstyle
+% }{%
+%   \par
+%   \vspace{2mm}
+% }
 
 % Define a title of the cover letter
 % Usage: \makelettertitle

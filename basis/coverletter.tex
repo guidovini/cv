@@ -1,0 +1,140 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./photo}
+\name{Guido}{ Santillán}
+\position{Full-Stack Web Developer{\enskip\cdotp\enskip}Mechatronics Engineer{\enskip\cdotp\enskip}Tech enthusiast}
+\address{N71-38 John F. Kennedy, Pablo Picasso, Quito, 170301, Ecuador}
+
+\mobile{(+593) 98 747 3691 GMT-5} 
+\email{info@guidosantillan.com}
+\homepage{www.guidosantillan.com}
+\github{guidosantillan01}
+\linkedin{guido92}
+\xing{Guido\_Santillan}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {On-apply GmbH.\\Solmsstraße 83\\60486 Frankfurt am Main}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Full Stack Developer}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Guido Santillán~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+With hands-on experience developing web applications using React, Redux, NodeJS, Express, and PostgreSQL, I offer the technical expertise On-apply is seeking for its full-stack developer position posted on StackOverflow. 
+
+\lettersection{About Me}
+I'm a skillful full-stack developer experienced in all stages of the software development cycle. Good understanding of web-related technologies such as HTML, CSS, SCSS, Javascript, ES6, Git, REST, build tools, Netlify, and Heroku for hosting. For the past 2 years, I have also been helping companies improve their online presence by designing and building their websites. Always taking into account good development practices, mobile-friendly support, and solid digital marketing strategies such as SEO and email marketing to increase visitor traffic and to further reach current clients.
+
+In addition to that, I have a bachelor's degree in Mechatronics Engineering from one of the most respected universities in my country, was part of a group of selected students who traveled to Germany to do academic research and had a fulfilling experience implementing machine learning and deep learning in various projects during an online scholarship hosted by Udacity and Facebook.
+
+\lettersection{Why Me?}
+As a fast learner and hard-working individual who adapts quickly to assess an organization’s needs, I firmly believe my skills will make a significant contribution to On-apply's strengths. I am actively looking forward to expanding my knowledge, improve my abilities and obtain relevant experience in the industry in order to help create world-changing solutions. 
+
+I'd be thrilled to learn more about the full-stack developer position. If my skills match your requirements or you want to know more about me, please do not hesitate to contact me at \href{mailto:info@guidosantillan.com}{info@guidosantillan.com}. I am grateful to you for the time taken reviewing my application.
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+P.S. — Perhaps we could also schedule a video call via Skype if you find it suitable. I am excited to show you how I can help On-apply's mission to make application processes easier and more efficient. 
+
+P.P.S. —  I am currently living in Quito-Ecuador but I will be moving to Germany in the next month.
+
+\end{document}

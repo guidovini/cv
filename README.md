@@ -8,8 +8,8 @@ To compile, type:
 
 `xelatex {your-cv}.tex`
 
-In my case it would be:
+In my case it should be:
 
-`xelatex resumen.tex`
+`xelatex resume.tex`
 
 This will produce a pdf file with the same name.

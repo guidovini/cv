@@ -24,12 +24,4 @@ Strong collaborative skills
 Website optimization
 Excellent problem solving skills
 
----Syder Ideas
-Developed the backend of this application using Node and Express
-Designed authentication and authorization scheme with Auth-0 JWTs and Passport
-
----Independent Web Developer
-Learnt new techniques to design and create over 5 websites
-Performed website design and development for clients in diverse fields such as consulting, non-profit organizations, and legal.
-
 

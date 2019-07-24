@@ -10,7 +10,7 @@
 %
 % Notes:
 % 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
-% 2) It has been written in such a way that under most circumstances you 
+% 2) It has been written in such a way that under most circumstances you
 % should not need to edit it.
 %
 % Class license:
@@ -474,7 +474,7 @@
   \end{minipage}
   \begin{minipage}[c]{\headertextwidth}
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
-    
+
     \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
@@ -579,7 +579,7 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  \par\addvspace{1.25ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
@@ -628,7 +628,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{11.5cm} R{5.5cm}}
     \setlength\leftskip{0.2cm}
     \subentrytitlestyle{#2} & \ifthenelse{\equal{#1}{}}
-      {\subentrydatestyle{#3}}{} 
+      {\subentrydatestyle{#3}}{}
     \ifthenelse{\equal{#1}{}}
       {}
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
@@ -668,7 +668,7 @@
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{
-	\skilltypestyle{#1} & \skillsetstyle{#2} 
+	\skilltypestyle{#1} & \skillsetstyle{#2}
   \\
 }
 
@@ -739,7 +739,7 @@
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
     {\lettertitlestyle{\@lettertitle} \\}
-  \lettertextstyle{\@letteropening} 
+  \lettertextstyle{\@letteropening}
 }
 
 % Define a closing of the cover letter
